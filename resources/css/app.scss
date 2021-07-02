@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=PT+Sans&family=Lato:wght@700&family=Londrina+Solid&display=swap");
+@import "nav";
+@import "products";
+@import "forms";
+@import "cart";
+@import "checkout";
+@import "user";
+@import "admin";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    @media (max-width: 500px) {
+        position: relative;
+    }
+}
+
+button,
+.btn {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+input,
+textarea,
+select {
+    text-align: left;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}

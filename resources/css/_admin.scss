@@ -1,0 +1,129 @@
+.admin {
+    margin-top: 30px;
+
+    h3 {
+        padding: 10px;
+    }
+
+    &__content {
+        .col-3 {
+            max-height: calc(100vh - 180px);
+            overflow-y: auto;
+
+            .delete-warning {
+                padding: 5px;
+                text-align: left;
+                margin: 0;
+                font-family: "Londrina Solid";
+                font-size: 15px;
+                background-color: #ffcaca;
+            }
+        }
+    }
+
+    &__items {
+        border-bottom: 1px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+
+        p {
+            text-align: left;
+        }
+
+        &:hover {
+            background-color: aliceblue;
+        }
+
+        &--category,
+        &--featured {
+            position: relative;
+            p {
+                text-align: left;
+                padding: 8px;
+                margin: 0;
+            }
+
+            input {
+                border: 0;
+                border-radius: 5px;
+                width: 100%;
+                padding: 8px;
+
+                &:focus-visible {
+                    outline: 0;
+                }
+            }
+
+            .buttons {
+                position: absolute;
+                top: 50%;
+                right: 3px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__details {
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+
+        p {
+            text-align: left;
+            font-size: 23px;
+        }
+        @media (min-width: 500px) {
+            width: 50%;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        .deleteBtn {
+            position: absolute;
+            top: -52px;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 142px;
+        }
+
+        .deletePanel {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: white;
+            width: 100%;
+            display: none;
+        }
+
+        .edit-product {
+            text-align: left;
+            input {
+                width: 100%;
+            }
+            textarea {
+                height: 200px;
+                resize: none;
+                padding: 4px;
+            }
+        }
+
+        .ordered-products {
+            p,
+            i {
+                font-size: 18px;
+
+                @media (max-width: 500px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        h4 {
+            text-align: left;
+        }
+    }
+}

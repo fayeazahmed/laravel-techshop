@@ -1,0 +1,45 @@
+.auth-form {
+    margin: auto;
+    @media (min-width: 500px) {
+        width: 50%;
+    }
+
+    div {
+        text-align: left;
+    }
+
+    button {
+        margin-left: auto;
+    }
+}
+
+.form-link {
+    text-align: left;
+    margin: auto;
+
+    @media (min-width: 500px) {
+        width: 50%;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.form-errors {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    margin-top: 16px;
+    text-align: left;
+
+    @media (min-width: 500px) {
+        width: 50%;
+    }
+
+    li {
+        padding: 3px;
+        text-align: left;
+        font-family: "Lato";
+    }
+}

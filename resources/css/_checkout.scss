@@ -1,0 +1,59 @@
+.checkout {
+    margin: 45px auto;
+
+    h3,
+    p {
+        text-align: left;
+    }
+
+    p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 21px;
+
+        @media (max-width: 500px) {
+            font-size: 15px;
+        }
+    }
+
+    @media (min-width: 500px) {
+        width: 50%;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    &__confirm {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 15px;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+        textarea {
+            width: 50%;
+            height: 100px;
+            resize: none;
+            text-align: left;
+            padding: 4px;
+
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button {
+            margin-left: 1.5rem;
+            @media (max-width: 500px) {
+                width: 100%;
+                margin: 8px 0;
+            }
+        }
+    }
+}
